@@ -55,7 +55,7 @@ private:
 
 typedef void (*GeneralFunction)(String AzureData);
 
-class AzureIoTHub
+class EspAzureIoTHub
 {
 public:
 	int senddata = 0;
@@ -73,5 +73,5 @@ private:
 			createIotHubSas(char *key, String url);
 };
 
-extern AzureIoTHub Azure;
+extern EspAzureIoTHub Azure;
 #endif
