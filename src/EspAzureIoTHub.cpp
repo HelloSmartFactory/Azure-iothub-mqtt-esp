@@ -31,7 +31,7 @@ void EspAzureIoTHub::begin(String cs)
 
 void EspAzureIoTHub::setCallback(GeneralFunction _az)
 {
-	mqtt.setCallback(this->callback); //Azure‚©‚ç‚Ìƒf[ƒ^‚ğó‚¯‚½ƒR[ƒ‹ƒoƒbƒN‚·‚é
+	mqtt.setCallback(this->callback); //Azureï¿½ï¿½ï¿½ï¿½Ìƒfï¿½[ï¿½^ï¿½ï¿½ï¿½ó‚¯‚ï¿½ï¿½ï¿½ï¿½Rï¿½[ï¿½ï¿½ï¿½oï¿½bï¿½Nï¿½ï¿½ï¿½ï¿½
 	az = _az;
 }
 bool EspAzureIoTHub::push(DataElement *data)
@@ -51,7 +51,7 @@ bool EspAzureIoTHub::connect()
 		{
 			Serial.println(F("connected"));
 			// ... and resubscribe
-			mqtt.subscribe(cloud.getUrl); //Azure‚©‚ç‚Ìƒf[ƒ^‚ğŠÄ‹‚·‚é
+			mqtt.subscribe(cloud.getUrl); //Azureï¿½ï¿½ï¿½ï¿½Ìƒfï¿½[ï¿½^ï¿½ï¿½ï¿½Äï¿½ï¿½ï¿½ï¿½ï¿½
 		}
 		else
 		{
