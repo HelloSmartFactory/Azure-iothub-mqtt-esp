@@ -1,6 +1,6 @@
 
 #ifndef EspAzureIoTHub_h
-#define Esp32AzureIoTHub_h
+#define EspAzureIoTHub_h
 #include <WiFiClientSecure.h>
 #include "sha256.h"
 #include "Base64.h"
